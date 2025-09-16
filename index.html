@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binär & Caesar Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binär & Caesar Converter</h1>
+
+        <div class="mode-switch">
+            <button id="binaryMode" class="active">Text ↔ Binär</button>
+            <button id="caesarMode">Caesar Verschlüsselung</button>
+        </div>
+
+        <div id="binarySection">
+            <textarea id="binaryInput" placeholder="Text oder Binärcode eingeben"></textarea>
+            <div class="buttons">
+                <button id="toBinary">Text → Binär</button>
+                <button id="toText">Binär → Text</button>
+            </div>
+            <textarea id="binaryOutput" placeholder="Ergebnis" readonly></textarea>
+            <button id="copyBinary">Kopieren</button>
+        </div>
+
+        <div id="caesarSection" style="display:none;">
+            <textarea id="caesarInput" placeholder="Text eingeben"></textarea>
+            <input type="number" id="caesarShift" placeholder="Zahl eingeben">
+            <div class="buttons">
+                <button id="encrypt">Verschlüsseln</button>
+                <button id="decrypt">Entschlüsseln</button>
+            </div>
+            <textarea id="caesarOutput" placeholder="Ergebnis" readonly></textarea>
+            <button id="copyCaesar">Kopieren</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
